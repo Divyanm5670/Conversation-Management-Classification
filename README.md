@@ -108,3 +108,37 @@ extraction_tool = {
   }
 }
 
+```
+**Example Input:**
+```
+'Hi, I'm Rajesh Kumar, 28 years old, based in Mumbai, India. After recovering from COVID, I participated in a hospital's AI-driven monitoring program for long-COVID symptoms. My email is rajesh.kumar@email.com.'
+```
+
+**Extracted Output:**
+```
+{
+    "age": 28,
+    "email": "rajesh.kumar@email.com",
+    "location": "Mumbai, India",
+    "name": "Rajesh Kumar",
+    "phone": null
+}
+```
+**Validation:**
+- ✅ SUCCESS → Output matches the required schema keys.
+**Missing Data Handling:**
+- When details are missing, the tool returns null values, ensuring strict compliance.
+
+**📦 Dependencies**
+- groq → official Python client for Groq API
+
+- google.colab.userdata → securely storing secrets in Colab
+
+- Standard libraries → os, json
+
+  **📌 Notes**
+  - Summarization ensures scalable long conversations without exceeding model limits.
+  - Tool-calling enforces reliability in structured data extraction.
+  - All demonstrations use Groq models:
+      - llama-3.1-8b-instant → for conversation summarization
+      - llama-3.3-70b-versatile → for schema-based extraction
