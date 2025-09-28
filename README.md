@@ -49,3 +49,4 @@ This project is designed to run in **Google Colab**.
 ```bash
 !pip install groq -q
 
+**2. Import dependencies**
