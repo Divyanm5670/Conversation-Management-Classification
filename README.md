@@ -76,14 +76,15 @@ The `ConversationManager` class handles message history, periodic summarization,
 - After every 5 assistant replies, a summary replaces the old history.  
 
 **Sample Output (Summarization):**
-- Triggering summarization after 5 runs. 
-- Conversation summarized and history replaced.
+
 ```bash
+--- Triggering summarization after 5 runs. ---
+--- Conversation summarized and history replaced. ---
 [
-{
+  {
 "role": "system",
-"content": "Summary of previous conversation: The user asked about COVID’s mental health impact. The assistant explained affected groups, AI tools for screening, chatbot benefits, and privacy concerns."
-}
+"content": "Summary of previous conversation: **Summary:**\n\nThe conversation revolves around the impact of COVID-19 on mental health and the role of AI in addressing this issue. Key points include:\n\n- The WHO reported a 25% global increase in anxiety and depression cases during the pandemic.\n- Young adults, healthcare workers, and those who lost jobs were disproportionately affected.\n- AI tools are being used to screen symptoms, run chatbots, and analyze speech for early signs of depression.\n- AI-powered chatbots, such as Woebot and Wysa, have shown reduced anxiety symptoms in users within two weeks.\n- AI is intended to support human therapists, providing 24/7 access and supplementing treatment, rather than replacing it."
+  }
 ]
 ```
 
