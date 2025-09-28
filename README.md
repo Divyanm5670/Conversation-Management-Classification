@@ -48,5 +48,34 @@ This project is designed to run in **Google Colab**.
 **1. Install library**
 ```bash
 !pip install groq -q
-
+```
 **2. Import dependencies**
+- `groq` → for API calls  
+- `json` → for parsing schema outputs  
+- `os` and `google.colab.userdata` → for managing secrets  
+
+**3. Configure API Key in Colab**
+- Go to **Colab left sidebar → Key icon (Secrets)**  
+- Add a new secret:  
+  - Name: `GROQ_API_KEY`  
+  - Value: *your Groq API key*  
+- Toggle **Notebook access ON**  
+
+**4. Run the Notebook**
+- The notebook installs dependencies, configures the API client, and demonstrates **Task 1** and **Task 2** step by step.  
+
+---
+### 🛠️ Demonstrations
+
+#### 🔹 Task 1: Conversation Management
+
+The `ConversationManager` class handles message history, periodic summarization, and truncation.  
+
+**Example flow:**
+- A dialogue about AI in mental health after COVID is simulated.  
+- After every 5 assistant replies, a summary replaces the old history.  
+
+**Sample Output (Summarization):**
+--- Triggering summarization after 5 runs. ---
+--- Conversation summarized and history replaced. ---
+
