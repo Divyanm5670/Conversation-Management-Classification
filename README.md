@@ -133,14 +133,14 @@ extraction_tool = {
 - When details are missing, the tool returns null values, ensuring strict compliance.
 ---
 
-**📦 Dependencies**
+## 📦 Dependencies
 - `groq` → official Python client for Groq API
 - `google.colab.userdata` → securely storing secrets in Colab
 - Standard libraries → `os`, `json`
 
----
 
-**📌 Notes**
+
+## 📌 Notes
 - Summarization ensures scalable long conversations without exceeding model limits.
 - Tool-calling enforces reliability in structured data extraction.
 - All demonstrations use Groq models:
