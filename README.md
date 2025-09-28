@@ -88,3 +88,23 @@ The `ConversationManager` class handles message history, periodic summarization,
 ]
 ```
 
+
+**Truncation Demonstration:**
+- By last 2 turns → keeps the final two exchanges.  
+- By last 150 characters → trims history to fit within the limit.  
+
+---
+
+#### 🔹 Task 2: JSON Schema Extraction
+
+The tool is configured as:
+```python
+extraction_tool = {
+  "type": "function",
+  "function": {
+    "name": "extract_user_details",
+    "description": "Extracts user information and returns JSON.",
+    "parameters": user_details_schema
+  }
+}
+
