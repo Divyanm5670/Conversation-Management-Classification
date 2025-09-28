@@ -62,7 +62,7 @@ This project is designed to run in **Google Colab**.
 - Toggle **Notebook access ON**  
 
 **4. Run the Notebook**
-- Execute the colab notebbok [here](https://bit.ly/4gHdlcs)
+- Execute the [colab notebbok](https://bit.ly/4gHdlcs)
 - The notebook installs dependencies, configures the API client, and demonstrates **Task 1** and **Task 2** step by step.  
 
 ---
