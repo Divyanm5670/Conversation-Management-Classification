@@ -76,6 +76,14 @@ The `ConversationManager` class handles message history, periodic summarization,
 - After every 5 assistant replies, a summary replaces the old history.  
 
 **Sample Output (Summarization):**
---- Triggering summarization after 5 runs. ---
---- Conversation summarized and history replaced. ---
+- Triggering summarization after 5 runs. 
+- Conversation summarized and history replaced.
+```bash
+[
+{
+"role": "system",
+"content": "Summary of previous conversation: The user asked about COVID’s mental health impact. The assistant explained affected groups, AI tools for screening, chatbot benefits, and privacy concerns."
+}
+]
+```
 
