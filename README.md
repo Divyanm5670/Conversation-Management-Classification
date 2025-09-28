@@ -1,6 +1,6 @@
 # Conversation Management & Classification using Groq API
 
-This project showcases two core conversational AI capabilities using the **Groq API** (with full OpenAI SDK compatibility), implemented entirely in a **Google Colab notebook** without additional orchestration frameworks.
+This project demonstrates two core conversational AI tasks using the Groq API, which is fully compatible with the OpenAI SDK in a Google Colab notebook, without additional frameworks. The assignment involves managing conversation history with summarization, performing periodic truncation, and classifying user chats using a JSON schema for structured information extraction. It covers maintaining concise conversation logs, implementing k-th run summarization, and parsing chats for key user details.
 
 ---
 
